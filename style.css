@@ -1,0 +1,73 @@
+body {
+    margin: 0; /* Supprime les marges par défaut du body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Assure que le corps occupe au moins 100% de la hauteur de la vue */
+    background-image: url(./heures.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrap {
+  
+    background-color:  white;
+    border-radius: 50%;
+    border: 3px solid #98ccf1;
+    box-shadow: inset 2px 3px 8px 0 #98ccf1;
+    width: 320px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 320px;
+}
+.minute, .heure {
+    position: absolute;
+    
+    margin: auto;
+      left: 0;	bottom: 0; right: 0;
+    transform-origin: bottom center;
+    transform: rotate(0deg);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    background: #98ccf1; 
+    
+}
+.minute {
+    height: 130px; width: 6px;
+    transform: rotate(90deg);
+    top: -22%;
+}
+.heure {
+    height: 100px; width: 6px;
+    transform: rotate(0deg);
+    top: -16%;
+}
+.seconde {
+    position: absolute;
+    height: 90px;
+    width: 2px;
+    margin: auto;
+    top: -14%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 4px;
+    background: #d3d700dd;
+    transform-origin: bottom center;
+    transform: rotate(180deg);
+}
+.dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #1794ee;
+    border: 2px solid #98ccf1;
+    border-radius: 50%;
+    margin: auto;
+} 
+ 
